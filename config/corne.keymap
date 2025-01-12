@@ -15,8 +15,8 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  -  |  "   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  $  |  ,  |  .  |  /   |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
@@ -27,16 +27,15 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  >  |  =  |  }  |  (  |  )  | DEL  |
-// | CTRL |  |  |  !  |     |     |     |   |  <  |  UP |  {  |  *  |  /  |  '   |
-// | SHFT |  \  |     |     |     |     |   | LFT | DWN | RGT |  ;  |  :  |  _   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-
+// | ESC  |   1  |   2   |   3   |  4  |  5  |    |     |     |     |     |     | BSPC |
+// | BTCLR|   6  |   7   |   8   |  9  |  0  |    |     |     |     |     |     |      |
+// | SHFT |   [  |   ]   |   +   |  $  |  +  |    |     |     |     |     |     |      |
+//                         | GUI |     | SPC |    | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &kp TAB   &kp EXCL       &kp RA(Q)   &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(NUBS)  &kp LS(N0)  &kp APOS   &kp LS(N8)       &kp LS(N9)     &kp DEL
+   &kp LSHFT &kp GRAVE      &kp LS(N1)  &trans    &trans    &trans       &kp NUBS      &kp UP      &kp NUHS   &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp MINUS
+   &kp LCTRL &kp RA(MINUS)  &trans      &trans    &trans    &trans       &kp LEFT      &kp DOWN    &kp RIGHT  &kp LS(COMMA)    &kp LS(DOT)    &kp LS(FSLH)
+                                        &kp LGUI  &trans    &kp SPACE    &kp RET       &trans    &kp RAL
                         >;
                 };
 
